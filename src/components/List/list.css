@@ -1,0 +1,135 @@
+/* ----- TO-DO LIST ----- */
+
+#list {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.list-item {
+  background-color: #eeeff3;
+  padding: 5px 30px;
+  border-radius: 25px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.list-button, .info-button {
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  width: 30px;
+  padding: 0;
+}
+
+.list-button:hover, .info-button:hover {
+  filter: contrast(20%);
+}
+
+.list-button:active, .info-button:active {
+  filter: contrast(100%);
+}
+
+.completed {
+  text-decoration: line-through;
+  order: 1;
+  vertical-align: middle;
+}
+
+/* Fixing bottom padding issue on completed tasks */
+.completed img {
+  padding-bottom: 1.2em;
+}
+
+/* Blur effect for bottom of list */
+#blur {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100vw;
+  opacity: 80%;
+  background-color: #f5f5f5;
+  z-index: 0;
+  box-shadow: 0px -3px 5px #f5f5f5;
+  filter: blur(10px);
+}
+
+/* ----- FOOTER ----- */
+
+#tasksLeft {
+  position: fixed;
+  bottom: 30px;
+  left: 40px;
+}
+
+#addTask-button {
+  background-color: #6098d3;
+  color: #f5f5f5;
+  border: transparent;
+  font-size: 2rem;
+  border-radius: 25px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+}
+
+#addTask-button:active {
+  background-color: #426f9f;
+}
+
+/* Edit Modal */
+
+.editModal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editModal {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 80%; /* Adjust as needed */
+  height: 40%; /* Adjust as needed */
+  overflow: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.editModal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.modal-input {
+  margin: 0 auto;
+}
+
+.input-button {
+  background-color: #6098d3;
+  color: white;
+  border: 2px solid #6098d3;
+  margin-left: -1px;
+  border-radius: 0px 2px 2px 0px;
+}

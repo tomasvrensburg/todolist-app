@@ -1,0 +1,22 @@
+/* ----- CALENDAR ----- */
+
+#calendar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.weekday {
+  letter-spacing: -0.8px;
+}
+
+.today {
+  color: #6098d3;
+}
+
+.today .weekday {
+  color: #6098d3;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}

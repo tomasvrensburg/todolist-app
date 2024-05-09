@@ -1,0 +1,16 @@
+/* Stylesheet for all modals */
+
+.main-icon {
+  margin-right: 5px;
+}
+
+/* InfoModal.js */
+
+.modal-icon {
+  height: 1.5em;
+  padding-bottom: .2em;
+}
+
+.modal-bold {
+  font-weight: 700;
+}
